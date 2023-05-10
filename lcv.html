@@ -7,19 +7,32 @@
     <title>devHTML</title>
     <meta name="keywords" content="developer, CV ,html, css, js">
     <meta name="description" content="This is  junior developer HTML,CSS,JS CV">
+    <link rel="stylesheet" href="lcv.css">
 </head>
 <body>
-    <img src="199.png" alt="engine">
+     <div class="container">
+    <div class="info">
+   <div class="image">
+     <img src="199.png" alt="engine">
+    </div>
+    <div class="info-text">
     <h1>Виктор Варакса</h1>
     <p>Я владею мастерской , занимающейся <strong>сварочными и слесарными работами</strong>.</p>
     <p>Мне нравятся <em>автомобили,гиревой спорт</em>,а также <em>узнавать о новых технологиях и технике,осваивать их.</em></p>
+    <br>
     <a href="https://t.me/ViktorVaraksa" target="_blank">Telegram</a>
+    </div>
+    </div>
+    <div class="card bg-green">
     <h2>Мои хобби</h2>
-    <ol>
+    <ol class="list">
         <li>Автомобили</li>
         <li>Гиревой спорт</li>
     </ol>
-    <table>
+    </div>
+    <div class="card bg-red">
+    <h2>Опыт работы</h2>
+    <table class="table">
         <thead>
             <tr>
                 <th>Название </th>
@@ -29,39 +42,47 @@
         </thead>
         <tbody>
             <tr>
-                <th>СК "Славия"</th>
-                <th>Мастер</th>
-                <th>1999-2002</th>
+                <td>СК "Славия"</td>
+                <td>Мастер</td>
+                <td>1999-2002</td>
             </tr>
             <tr>
-                <Th>СК "Славия"</Th>
-                <Th>Нач.участка</Th>
-                <Th>2002</Th>
+                <td>СК "Славия"</td>
+                <td>Нач.участка</td>
+                <td>2002</td>
             </tr>
             <tr>
-                <th>Инд.предприниматель</th>
-                <th></th>
-                <th>2002-н.в</th>
+                <td>Инд.предприниматель</td>
+                <td></td>
+                <td>2002-н.в</td>
             </tr>
         </tbody>
     </table>
-    <h2>Связаться со мной</h2>
-    <form action=""> 
-        <div>
+       </div>
+   <footer class="footer">
+    <form action="/" class="form"> 
+        <h2>Связаться со мной</h2>
+        <div class="font-row">
+        <div class="communication">
             <label for="name">Ваше имя:</label>
             <input type="text" id="name" placeholder="Введите имя">
         </div>
         
-        <div>
+        <div class="communication">
             <label for="email">Ваш email:</label>
             <input type="email" id="email" placeholder="Введите email">
         </div>
-        <div>
+        </div>
+        <div class="communication">
             <label for="message">Ваше сообщение:</label>
             <br>
             <textarea  id="" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-        </div>
-        <input type="submit" value="Отправить">
+        
+        <input class="btn" type="submit" value="Отправить">
+        
+    </div>
     </form>
+</footer>
+</div>
 </body>
 </html>
